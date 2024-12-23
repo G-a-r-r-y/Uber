@@ -24,6 +24,10 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
     select: false,
+    // The select property in a Mongoose schema defines whether a field should be included
+    // or excluded by default when querying the database.
+    // Purpose
+    // Privacy/Security: Commonly used to exclude sensitive fields like passwords from query results unless explicitly
   },
   socketId: {
     type: String,
